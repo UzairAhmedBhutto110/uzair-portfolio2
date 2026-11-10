@@ -1,0 +1,132 @@
+
+.projects-section {
+  padding: 90px 25px;
+  background-color: #ffffff;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  margin-bottom: 45px;
+}
+
+.projects-heading h2 {
+  color: #172033;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.projects-intro {
+  max-width: 600px;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.project-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #2563eb;
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.project-number {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project-category {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.project-card h3 {
+  color: #172033;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  margin-bottom: 22px;
+}
+
+.project-technologies span {
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.project-bottom {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 65px 20px;
+  }
+
+  .projects-heading h2 {
+    font-size: 30px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+}

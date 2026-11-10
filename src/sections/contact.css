@@ -1,0 +1,44 @@
+
+.contact-section {
+  padding: 90px 25px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-container h2 {
+  font-size: 36px;
+  margin: 12px 0;
+  color: #172033;
+}
+
+.contact-description {
+  color: #64748b;
+  line-height: 1.8;
+  margin: 20px 0 30px;
+}
+
+.contact-button {
+  display: inline-block;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .contact-container h2 {
+    font-size: 30px;
+  }
+}
